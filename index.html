@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Pousada Bela Silvia — Hospitalidade com Alma</title>
+<meta content="Pousada Bela Silvia, em Ponta Negra, Natal/RN. Uma hospedagem acolhedora, com piscina, varanda e localização prática para viver Natal com mais leveza." name="description"/>
+<style>
+:root{
+  --ink:#27353b;
+  --ink-soft:#5f6e73;
+  --olive:#6c785d;
+  --olive-soft:#dfe5d7;
+  --sand:#f6f1e8;
+  --sand-2:#fbf8f2;
+  --gold:#c8ac6c;
+  --line:#e8e0d2;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--sand-2);line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:500;margin:0 0 .6rem}
+p{margin:.2rem 0 0}
+.container{width:min(1140px, calc(100% - 38px));margin:0 auto}
+.kicker{display:inline-block;font-size:.77rem;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);font-weight:700;margin-bottom:12px}
+.section{padding:78px 0}
+.section-sm{padding:52px 0}
+header{position:sticky;top:0;z-index:50;background:rgba(251,248,242,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand img{height:58px;width:auto;object-fit:contain}
+.nav-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{text-decoration:none;color:#2d6275;font-size:1rem;font-weight:500}
+.nav-links a:hover{color:var(--olive)}
+.language-list{display:flex;gap:6px;align-items:center}.language-list span{display:inline-flex;align-items:center;justify-content:center;width:32px;height:28px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#2d6275;font-size:.72rem;font-weight:800;letter-spacing:.04em}
+.cta-nav{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:11px 17px;border-radius:999px;background:var(--olive);color:#fff;font-weight:700;white-space:nowrap}
+.hero{padding:48px 0 34px;background:linear-gradient(180deg,#fbf8f2 0%, #f3ede2 100%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+.hero-copy{padding:18px 0}
+.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);font-weight:700}
+.hero h1{font-size:clamp(2.7rem,5.3vw,5.1rem);line-height:.98;color:#31393d;margin:.5rem 0 1rem}
+.lead{font-size:1.15rem;color:var(--ink-soft);max-width:620px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:700;transition:.2s ease}
+.btn-primary{background:var(--olive);color:#fff}
+.btn-primary:hover{transform:translateY(-1px);filter:brightness(.98)}
+.btn-secondary{border:1px solid #9ead96;color:var(--olive);background:transparent}
+.btn-secondary:hover{background:var(--olive-soft)}
+.hero-note{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;color:var(--ink-soft);font-size:.95rem}
+.hero-visual{position:relative}
+.hero-card{background:#fff;padding:12px;border-radius:28px;box-shadow:0 18px 45px rgba(39,53,59,.10);overflow:hidden}
+.hero-card img{width:100%;height:560px;object-fit:cover;object-position:center 45%;border-radius:20px}
+.hero-badge{position:absolute;left:20px;bottom:18px;background:rgba(255,255,255,.92);border:1px solid rgba(232,224,210,.95);padding:12px 14px;border-radius:16px;max-width:280px;box-shadow:0 10px 24px rgba(39,53,59,.08)}
+.hero-badge strong{display:block;font-size:.92rem;margin-bottom:4px}
+.intro{text-align:center;max-width:760px;margin:0 auto}
+.intro h2{font-size:clamp(2rem,3.2vw,3rem)}
+.intro p{font-size:1.06rem;color:var(--ink-soft)}
+.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.highlight{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 24px rgba(39,53,59,.05)}
+.highlight h3{font-size:1.12rem;margin-bottom:8px}
+.highlight p{font-size:.95rem;color:var(--ink-soft)}
+.ambientes{background:var(--sand)}
+.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:220px;gap:14px;margin-top:32px}
+.gallery .big{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:20px;box-shadow:0 8px 20px rgba(39,53,59,.06)}
+.split{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:center}
+.visual-card{background:#fff;padding:12px;border-radius:24px;box-shadow:0 12px 28px rgba(39,53,59,.07)}
+.visual-card img{border-radius:16px;width:100%;height:460px;object-fit:cover}
+.text-card h2{font-size:clamp(2rem,3.1vw,2.9rem)}
+.text-card p{color:var(--ink-soft);font-size:1.02rem}
+.list-clean{display:grid;gap:10px;margin-top:18px}
+.list-clean div{display:flex;gap:10px;align-items:flex-start;color:var(--ink-soft)}
+.list-clean strong{color:var(--ink)}
+.experiencias{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.card{background:var(--sand-2);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 24px rgba(39,53,59,.05)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card .pad{padding:20px}
+.card .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--olive-soft);color:var(--olive);font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.card h3{font-size:1.2rem}
+.card p{font-size:.96rem;color:var(--ink-soft)}
+.notice{margin-top:24px;padding:18px 20px;border-left:4px solid var(--gold);background:#fbfaf7;border-radius:0 16px 16px 0;color:var(--ink-soft)}
+.natal{background:var(--sand)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:30px}
+.info-box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 24px rgba(39,53,59,.05)}
+.info-box h3{font-size:1.14rem}
+.info-box p{color:var(--ink-soft);font-size:.95rem}
+.info-banner{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center;box-shadow:0 10px 24px rgba(39,53,59,.05)}
+.info-banner img{width:100%;height:190px;object-fit:cover;border-radius:16px}
+.project{background:#1f2c31;color:#eef3f3;text-align:center}
+.project p{max-width:760px;margin:0 auto;color:#d9e2e3}
+.contact{text-align:center}
+.contact h2{font-size:clamp(2rem,3.2vw,3rem)}
+.contact p{max-width:720px;margin:0 auto;color:var(--ink-soft)}
+.contact-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:18px;color:var(--ink-soft);font-size:.95rem}.instagram-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:var(--olive);font-weight:700}.instagram-link svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8}
+.footer{padding:28px 0;background:#182329;color:#d0d8da;text-align:center;font-size:.9rem}
+.small{font-size:.92rem;color:var(--ink-soft)}
+@media (max-width:980px){
+  .hero-grid,.split{grid-template-columns:1fr;gap:26px}
+  .highlights{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:210px}
+  .gallery .big{grid-row:auto;grid-column:span 2}
+  .info-grid{grid-template-columns:1fr}
+  .info-banner{grid-template-columns:1fr}
+  .hero-card img{height:440px}
+}
+@media (max-width:760px){
+  .nav-links a{display:none}
+  .nav-links a.cta-nav{display:inline-flex}
+  .language-list{display:none}
+  .section{padding:64px 0}
+}
+@media (max-width:620px){
+  .container{width:min(100% - 26px, 1140px)}
+  .brand img{height:52px}
+  .hero{padding:30px 0 20px}
+  .hero h1{font-size:2.6rem}
+  .lead{font-size:1.02rem}
+  .hero-card img{height:360px}
+  .hero-badge{position:static;max-width:none;margin-top:12px}
+  .highlights,.cards,.gallery{grid-template-columns:1fr}
+  .gallery .big{grid-column:auto}
+  .gallery{grid-auto-rows:220px}
+  .visual-card img{height:360px}
+  .hero-note,.contact-meta{flex-direction:column;gap:8px;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container navbar">
+<a aria-label="Pousada Bela Silvia" class="brand" href="#top"><img alt="Logo da Pousada Bela Silvia" decoding="async" height="724" loading="eager" src="assets/images/logo-pousada-bela-silvia.png" width="912"/></a>
+<div class="nav-actions">
+<nav aria-label="Principal" class="nav-links">
+<a href="#pousada">A pousada</a>
+<a href="#ambientes">Ambientes</a>
+<a href="#acomodacoes">Acomodações</a>
+<a href="#experiencias">Experiências programadas</a>
+<a href="#natal">Natal &amp; Ponta Negra</a>
+</nav>
+<div aria-label="Atendimento em português, inglês e italiano" class="language-list"><span>PT</span><span>EN</span><span>IT</span></div>
+<a class="cta-nav" href="https://wa.me/5584921692411" rel="noopener noreferrer" target="_blank">Reservar direto</a>
+</div>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<div class="eyebrow">Ponta Negra • Natal/RN</div>
+<h1>Onde o essencial ganha espaço.</h1>
+<p class="lead">Um cantinho gostoso em Ponta Negra para chegar, respirar e viver Natal com leveza.</p>
+<div class="hero-buttons">
+<a class="btn btn-primary" href="https://wa.me/5584921692411" rel="noopener noreferrer" target="_blank">Consultar disponibilidade</a>
+<a class="btn btn-secondary" href="#pousada">Conhecer a pousada</a>
+</div>
+<div class="hero-note">
+<span>Reserva direta com a pousada</span>
+<span>Atendimento em português, inglês e italiano</span>
+<span>Pagamento com cartão conforme as condições da reserva</span>
+</div>
+</div>
+<div class="hero-visual">
+<div class="hero-card">
+<img alt="Piscina e área externa da Pousada Bela Silvia" decoding="async" fetchpriority="high" height="1599" loading="eager" src="assets/images/hero-piscina-area-externa.jpg" width="899"/>
+</div>
+<div class="hero-badge">
+<strong>Hospitalidade com alma</strong>
+<span class="small">Piscina, varanda, áreas de convivência e um ritmo mais tranquilo para sua estadia em Natal.</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="pousada">
+<div class="container">
+<div class="intro">
+<span class="kicker">A pousada</span>
+<h2>Acolhimento simples, verdadeiro e bem cuidado.</h2>
+<p>A Bela Silvia é uma pousada familiar em Ponta Negra, onde o cuidado aparece nos detalhes e o atendimento próximo faz você se sentir verdadeiramente bem-vindo.</p>
+</div>
+<div class="highlights">
+<div class="highlight"><h3>Localização prática</h3><p>Perto de Ponta Negra e com acesso facilitado para aproveitar praia, passeios e o melhor da região.</p></div>
+<div class="highlight"><h3>Piscina e respiro</h3><p>Uma pausa boa entre um passeio e outro, com ambiente leve para descansar e aproveitar o dia.</p></div>
+<div class="highlight"><h3>Ambientes de convivência</h3><p>Varanda, jardim e áreas comuns que convidam a desacelerar, conversar e viver a estadia com mais calma.</p></div>
+<div class="highlight"><h3>Atendimento humano</h3><p>Recepção acolhedora e disponibilidade para orientar sobre a hospedagem e a vivência em Natal.</p></div>
+</div>
+</div>
+</section>
+<section class="section ambientes" id="ambientes">
+<div class="container">
+<div class="intro">
+<span class="kicker">Ambientes</span>
+<h2>Espaços que convidam a ficar mais um pouco.</h2>
+<p>Entre a piscina, a varanda e os cantinhos de pausa, a pousada oferece um clima descomplicado e acolhedor para descansar no seu ritmo.</p>
+</div>
+<div class="gallery">
+<img alt="Varanda solar da pousada" class="big" decoding="async" height="1063" loading="lazy" src="assets/images/varanda-solar.jpg" width="1600"/>
+<img alt="Área social da pousada" decoding="async" height="1063" loading="lazy" src="assets/images/area-social.jpg" width="1600"/>
+<img alt="Área externa com jardim da pousada" decoding="async" height="1280" loading="lazy" src="assets/images/jardim-area-externa.jpg" width="720"/>
+<img alt="Detalhe do jardim zen da pousada" decoding="async" height="1052" loading="lazy" src="assets/images/jardim-zen.jpg" width="1530"/>
+<img alt="Piscina da pousada" decoding="async" height="1599" loading="lazy" src="assets/images/piscina.jpg" width="899"/>
+</div>
+</div>
+</section>
+<section class="section" id="acomodacoes">
+<div class="container split">
+<div class="visual-card"><img alt="Acomodação da Pousada Bela Silvia" decoding="async" height="1599" loading="lazy" src="assets/images/acomodacao.jpg" width="899"/></div>
+<div class="text-card">
+<span class="kicker">Acomodações</span>
+<h2>Conforto essencial para uma estadia tranquila.</h2>
+<p>Oferecemos hospedagem em formato flat, sem café da manhã incluído na diária, com simplicidade e funcionalidade para quem valoriza descanso, privacidade e liberdade durante a viagem.</p>
+<div class="list-clean">
+<div><strong>Conforto básico:</strong> camas, banheiro privativo e estrutura para uma hospedagem prática.</div>
+<div><strong>Clima acolhedor:</strong> um ambiente sem excesso, para descansar depois de um dia de praia, passeios ou trabalho.</div>
+<div><strong>Boa base em Natal:</strong> ideal para quem busca uma pousada familiar em Ponta Negra com atendimento próximo.</div>
+</div>
+<p class="small" style="margin-top:18px">Para informações detalhadas sobre disponibilidade, tipo de quarto e condições da reserva, fale diretamente com a pousada.</p>
+</div>
+</div>
+</section>
+<section class="section experiencias" id="experiencias">
+<div class="container">
+<div class="intro">
+<span class="kicker">Em programação</span>
+<h2>Experiências programadas</h2>
+<p>Estamos preparando atividades incríveis, criadas com cuidado e conectadas ao autoconhecimento. Já, já compartilharemos a programação.</p>
+</div>
+<div class="cards">
+<article class="card"><img alt="Experiência corpo em movimento" decoding="async" height="1086" loading="lazy" src="assets/images/experiencia-corpo-em-movimento.jpg" width="1448"/><div class="pad"><span class="tag">Datas em breve</span><h3>Corpo em movimento</h3><p>Uma proposta voltada à presença, ao respirar com mais consciência e ao desacelerar durante a estadia.</p></div></article>
+<article class="card"><img alt="Oficina de mandalas" decoding="async" height="1402" loading="lazy" src="assets/images/oficina-mandalas.jpg" width="1122"/><div class="pad"><span class="tag">Programada</span><h3>Oficina de mandalas</h3><p>Criação, cor e expressão em um encontro que convida ao fazer manual e ao momento presente.</p></div></article>
+<article class="card"><img alt="Jantar especial" decoding="async" height="1086" loading="lazy" src="assets/images/momento-especial.jpg" width="1448"/><div class="pad"><span class="tag">Sob consulta</span><h3>Momentos especiais</h3><p>Propostas para celebrar a dois ou tornar a estadia ainda mais memorável, conforme agenda e confirmação.</p></div></article>
+</div>
+<div class="notice">Acompanhe nossas mídias e descubra as próximas experiências.</div>
+</div>
+</section>
+<section class="section natal" id="natal">
+<div class="container">
+<div class="intro">
+<span class="kicker">Natal &amp; Ponta Negra</span>
+<h2>Uma base acolhedora para viver a cidade.</h2>
+<p>Ponta Negra é uma das regiões mais conhecidas de Natal. Ficar por aqui significa estar perto da praia, da vida local e de bons pontos de partida para descobrir a cidade com mais calma.</p>
+</div>
+<div class="info-grid">
+<div class="info-box"><h3>Morro do Careca</h3><p>Cartão-postal de Ponta Negra, ele ajuda a compor a paisagem mais emblemática da região e faz parte da experiência de quem visita Natal.</p></div>
+<div class="info-box"><h3>Praia, orla e passeio</h3><p>A região convida a caminhar, contemplar o mar, aproveitar o clima e seguir dali para outros roteiros pela cidade e arredores.</p></div>
+<div class="info-box"><h3>Sabores e atmosfera local</h3><p>Entre a orla, cafés, bares e restaurantes, Ponta Negra oferece um entorno prático para quem quer combinar descanso e movimento.</p></div>
+</div>
+<div class="info-banner">
+<img alt="Vista do Morro do Careca em Ponta Negra" decoding="async" height="1064" loading="lazy" src="assets/images/morro-do-careca-ponta-negra.jpg" width="1600"/>
+<div>
+<h3 style="font-size:1.55rem;margin-bottom:8px">Viver Natal também é saber escolher o ritmo.</h3>
+<p style="color:var(--ink-soft)">A Bela Silvia pode ser esse ponto de apoio: um lugar simples e agradável para voltar depois da praia, dos passeios e das descobertas da cidade. Se quiser, a equipe também pode orientar com informações básicas sobre a região e possibilidades de roteiro.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section-sm project">
+<div class="container">
+<span class="kicker" style="color:#d7c79e">Projeto Bela Silvia — Hospitalidade com Alma</span>
+<h2>Reposicionamento com verdade operacional.</h2>
+<p>Esta apresentação faz parte de um piloto de reposicionamento e comunicação desenvolvido em parceria com o ecossistema Del’Alma, respeitando a estrutura atual da pousada e o que ela pode entregar com verdade.</p>
+</div>
+</section>
+<section class="section contact">
+<div class="container">
+<span class="kicker">Reserva direta</span>
+<h2>Fale com a Bela Silvia</h2>
+<p>Consulte disponibilidade, tarifas, condições de pagamento e informações da sua estadia diretamente com a pousada.</p>
+<div class="hero-buttons" style="justify-content:center">
+<a class="btn btn-primary" href="https://wa.me/5584921692411" rel="noopener noreferrer" target="_blank">Reservar pelo WhatsApp</a>
+<a class="btn btn-secondary" href="mailto:reservaspousadabelasilvia@gmail.com">Enviar e-mail</a>
+</div>
+<div class="contact-meta">
+<span>Rua das Algas, 2231 • Ponta Negra • Natal/RN</span>
+<a aria-label="Instagram da Pousada Bela Silvia" class="instagram-link" href="https://www.instagram.com/pousadabelasilvia/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.8" r="1"></circle></svg><span>@pousadabelasilvia</span></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">Pousada Bela Silvia • Ponta Negra • Natal/RN</div>
+</footer>
+</body>
+</html>
